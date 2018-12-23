@@ -5,10 +5,13 @@ package com.example.demo.imageloaddemo
  * description :
  */
 class Person(){
+    constructor(name: String,age:Int):this()
+
     @JvmField val name: String="name"
 
     var age:Int = 0
         get() {
             return 1
         }
+
 }

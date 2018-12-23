@@ -41,12 +41,14 @@ class MainActivity : AppCompatActivity() {
 //
 //        }).imageView(imageView2).show()
 
-        ImageLoaderUtil.getInstance().with(this).imageUrl(gif).asGif(true).resultCallBack(object :
+        ImageLoaderUtil.getInstance().with(this).imageUrl(gif).resultCallBack(object :
             LoaderResultCallBack{
             override fun onFail(p0: Exception?) = Toast.makeText(mainActivity,"fail3",Toast.LENGTH_SHORT).show()
 
             override fun onSucc(p0: Drawable?) = Toast.makeText(mainActivity,"succ3",Toast.LENGTH_SHORT).show()
 
         }).imageView(imageView3).show()
+
+        print("demo")
     }
 }
